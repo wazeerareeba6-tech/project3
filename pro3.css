@@ -1,0 +1,627 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: black;
+  color: white;
+  height: 120px;
+  position: fixed;  
+  top: 0;          
+  left: 0;
+  width: 100%;      
+  z-index: 1000;  
+}
+
+.logo-box img {
+  height: 50px;
+  border-radius: 5px;
+  transform: translateX(30px);
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links ul li {
+  position: relative;
+}
+
+.nav-links ul li a, summary {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  user-select: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+summary::marker {
+  display: none;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: black;
+  list-style: none;
+}
+
+details[open] .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  width: 150px;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background: white;
+}
+
+.schedule-btn {
+  background: orange;
+  color: white;
+  border-radius: 6px;
+  font-size: 20px;
+  width: 180px;
+  height: 50px;
+  cursor: pointer;
+}
+.schedule-btn:hover {
+  background: white;
+  color: black;
+}
+
+.icons {
+  display: flex;
+  gap: 25px;
+  font-size: 30px;
+  cursor: pointer;
+  transform: translateX(-10px);
+}
+.hero {
+  display: flex;
+  align-items: center;
+  height: 150vh;
+  background: url('https://media.istockphoto.com/id/1396856251/photo/colonial-house.jpg?s=612x612&w=0&k=20&c=_tGiix_HTQkJj2piTsilMuVef9v2nUwEkSC9Alo89BM=') no-repeat center center/cover;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column; 
+  color: white;
+  transform: translateX(50px);
+}
+
+.hero-left p {
+  font-size: 30px;
+  font-weight: bold;
+  color: orange;
+  transform: translateY(250px);
+}
+
+.hero-left h1 {
+  font-size: 80px;
+  color: white;
+  transform: translateY(150px);
+}
+.hero-left h2 {
+  font-size: 80px;
+  color: white;
+    transform: translateY(10px);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  transform: translateY(20px); 
+}
+
+.btn-schedule {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  width: 180px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.btn-schedule:hover {
+  color: white;
+  border-color: orangered;
+}
+
+.btn-learn {
+  background: white;
+  color: black;
+  border: none;
+  width: 180px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.btn-learn:hover {
+  background: transparent;
+  color: white;
+}
+.about-section {
+  display: flex;
+  background: black;
+  color: white;
+  height: 100vh;
+  transform: translateY(100px);
+}
+
+.about-left {
+  flex: 1;
+}
+
+.about-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: black;
+  transform: translateX(40px);
+}
+
+.about-title {
+  font-size: 50px;
+  color: yellow;
+}
+
+.about-subtitle {
+  font-size: 40px;
+  width: 500px;
+  color: white;
+  transform: translateY(-50px);
+}
+
+.about-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  transform: translateY(-60px);
+}
+
+.box {
+  background: yellowgreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.box:hover {
+  background: orange;
+  transform: scale(1.05);
+}
+
+.icon {
+  font-size: 30px;
+}
+
+.view-btn {
+  background: orange;
+  color: white;
+  font-size: 20px;
+  border: none;
+  height: 70px;
+  width: 260px;
+  cursor: pointer;
+  transform: translateY(-40px);
+}
+
+.view-btn:hover {
+  background: white;
+  color: black;
+}
+.stats-section {
+  background: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(30px);
+}
+
+.stats-row {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 150px;
+  background: white;
+}
+
+.stat-box h2 {
+  font-size: 70px;
+  color: orange;
+  transform: translateY(50px);
+}
+
+.stat-box p {
+  font-size: 20px;
+  color: black;
+  transform: translateY(-10px);
+}
+
+.property-section {
+  display: flex;
+  height: 100vh;
+
+}
+
+.property-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateY(100px);
+}
+
+.property-title {
+  font-size: 30px;
+  background: white;
+  color: yellow;
+  transform: translateY(-100px) translateX(60px);
+}
+
+.property-subtitle {
+  font-size: 60px;
+  width: 500px;
+  color: black;
+  transform: translateY(-150px) translateX(50px);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  transform: translateY(-150px);
+  font-size: 20px;
+}
+
+.features-grid div {
+  background: white;
+  text-align: center;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.features-grid div:hover {
+  background: orange;
+  transform: scale(1.05);
+}
+
+.property-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.property-right img, 
+.property-right video {
+  width: 90%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 10px;
+  transform: translateY(40px);
+}
+.overview-section {
+  background: orange;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  text-align: center;
+}
+
+.overview-title {
+  font-size: 30px;
+  transform: translateY(20px);
+}
+
+.overview-subtitle {
+  font-size: 60px;
+  width: 500px;
+  transform: translateY(-20px);
+}
+
+.overview-text {
+  font-size: 25px;
+  width: 800px;
+  transform: translateY(-30px);
+}
+
+.overview-btn {
+  background: black;
+  color: white;
+  border: none;
+  font-size: 20px;
+  height: 50px;
+  width: 200px;
+  cursor: pointer;
+  transform: translateY(40px);
+  transition: 0.3s;
+  transform: translateY(-20px);
+}
+
+.overview-btn:hover {
+  background: white;
+  color: black;
+}
+.contact-section {
+  display: flex;
+  background: black;
+  color: white;
+  height: 100vh;
+  transform: translateY(100px);
+}
+
+.contact-left {
+  flex: 1;
+}
+
+.contact-left img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateX(30px);
+}
+
+.cta-title {
+  color: yellow;
+  font-size: 35px;
+}
+
+.cta-subtitle {
+  color: white;
+  font-size: 50px;
+  transform: translateY(-30px);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  transform: translateY(30px);
+}
+
+.form-grid input {
+  background: white;
+  color: grey;
+  border: none;
+  height: 50px;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+textarea {
+  background: white;
+  color: black;
+  border: none;
+  height: 120px;
+  font-size: 16px;
+  width: 90%;
+  transform: translateY(50px);
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.submit-btn {
+  background: orange;
+  color: black;
+  border: none;
+  font-size: 20px;
+  height: 50px;
+  width: 220px;
+  cursor: pointer;
+  transform: translateY(70px) translateX(200px);
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: white;
+  color: black;
+}
+.blog-section {
+  background: white;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  transform: translateY(100px);
+}
+
+.blog-tag {
+  font-size: 30px;
+  color: orange;
+  transform: translateY(70px);
+}
+
+.blog-title {
+  font-size: 50px;
+  color: black;
+  transform: translateY(40px);
+}
+
+.blog-row {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  transform: translateY(60px);
+}
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  background: white;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.blog-card img {
+  width: 120%;
+  height: 400px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.blog-small {
+  font-size: 25px;
+  color: orange;
+  transform: translateY(20px);
+}
+
+.blog-heading {
+  font-size: 25px;
+  color: black;
+  transform: translateY(10px);
+  width: 80%;
+}
+
+.blog-btn {
+  background: black;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 150px;
+  font-size: 16px;
+  cursor: pointer;
+  transform: translateY(20px);
+  transition: 0.3s;
+}
+
+.blog-btn:hover {
+  background: orange;
+  color: white;
+}
+.footer-section {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(300px);
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.footer-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transform: translateX(40px);
+}
+
+.footer-heading {
+  font-size: 30px;
+  color: orange;
+}
+
+.footer-desc {
+  font-size: 20px;
+  color: white;
+  transform: translateY(-30px);
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links li {
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-links li:hover {
+  color: yellow;
+}
+
+.newsletter-box {
+  display: flex;
+  gap: 5px;
+  transform: translateX(-50px);
+}
+
+.newsletter-box input {
+  height: 40px;
+  width: 70%;
+  border: none;
+  background: white;
+  color: black;
+}
+
+.newsletter-box button {
+  background: yellow;
+  color: black;
+  border: none;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.newsletter-box button:hover {
+  background: white;
+  color: black;
+}
+
+.insta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  transform: translateX(-20px);
+}
+
+.insta-grid img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.insta-grid img:hover {
+  transform: scale(1.05);
+}
